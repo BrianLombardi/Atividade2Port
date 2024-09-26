@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <!-- Link para o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Portfólio</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Seção de Perfil -->
+        <section class="profile row justify-content-center">
+            <div class="col-md-4 text-center">
+                <img src="{{ url_for('static', filename='images/my-photo.jpg') }}" alt="Minha Foto" class="profile-pic img-fluid rounded-circle">
+            </div>
+        </section>
+
+        <!-- Seção Sobre Mim -->
+        <section class="about-me row">
+            <div class="col">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Meu nome é Brian Lombardi e sou um entusiasta iniciante na área de Tecnologia da Informação...</p>
+            </div>
+        </section>
+
+        <!-- Seção de Projetos -->
+        <section class="projects row">
+            <div class="col-md-6">
+                <div class="project card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Projeto 1: Aplicativo de Lista de Tarefas</h3>
+                        <p class="card-text">Desenvolvi um aplicativo simples de lista de tarefas utilizando HTML, CSS e JavaScript...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Projeto 2: Site Pessoal</h3>
+                        <p class="card-text">Criei um site pessoal para exibir minhas habilidades e projetos...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Projeto 3: Sistema de Registro de Usuários</h3>
+                        <p class="card-text">Desenvolvi um sistema básico de registro de usuários com Python e Flask...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Projeto 4: API de Clima</h3>
+                        <p class="card-text">Criei uma API simples que fornece informações sobre o clima...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section class="contact row">
+            <div class="col">
+                <h2>Contato</h2>
+                <p>E-mail: Brianlombardi.2003@gmail.com</p>
+                <p>Github: <a href="https://github.com/BrianLombardi" target="_blank">BrianLombardi</a></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Link para o Bootstrap JS e dependências -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
